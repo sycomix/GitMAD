@@ -1,0 +1,25 @@
+# Example Repository Manager Configuration
+organization:
+  groupBy: source  # Can be: source, owner, or custom
+  customRules:
+    - pattern: "frontend-*"
+      directory: "frontend"
+    - pattern: "backend-*"
+      directory: "backend"
+
+repositories:
+  - url: "https://github.com/facebook/react"
+    source: "github"
+    owner: "facebook"
+    name: "react"
+    stars: 200000
+    lastUpdated: "2023-12-01"
+    topics: ["javascript", "frontend", "ui"]
+
+  - url: "https://github.com/nodejs/node"
+    source: "github"
+    owner: "nodejs"
+    name: "node"
+    stars: 100000
+    lastUpdated: "2023-12-01"
+    topics: ["javascript", "runtime"]

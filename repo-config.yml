@@ -1,0 +1,25 @@
+# Repository Manager Configuration
+organization:
+  groupBy: source  # Can be: source, owner, or custom
+  customRules:
+    - pattern: "frontend-*"
+      directory: "frontend"
+    - pattern: "backend-*"
+      directory: "backend"
+
+repositories:
+  - url: "https://github.com/example/repo1"
+    source: "github"
+    owner: "example"
+    name: "repo1"
+    stars: 100
+    lastUpdated: "2023-12-01"
+    topics: ["javascript", "cli"]
+
+  - url: "https://gitlab.com/example/repo2"
+    source: "gitlab"
+    owner: "example"
+    name: "repo2"
+    stars: 50
+    lastUpdated: "2023-11-15"
+    topics: ["python", "api"]
